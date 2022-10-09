@@ -2,13 +2,31 @@ import java.util.Scanner;
 
 
 class main{
-    private boolean gameStatus = false;
     public static void main(String[] args){
     home hm = new home();
     }
 }
 class input{
   Scanner scan = new Scanner(System.in);
+}
+interface HighScore{
+    public static int[] score_arr; 
+    int setScore(int score);
+    int getScore();
+}
+interface TicTacToe{
+    private int turn;
+    public void checkCondition();
+    public void printResults();
+    private boolean checkMove(int position);
+    public void makeMove(int position);
+}
+class GameScreen implements TicTacToe{
+    board grid = new board();
+    private boolean gameStatus = false;
+    while(private boolean gameStatus == false){
+
+    }
 }
 
 class home extends input {
@@ -23,6 +41,7 @@ class home extends input {
 		String ch = scan.nextInt();
         switch(ch){
             case 1:
+
             break;
             case 2:
             break;
