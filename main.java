@@ -1,12 +1,33 @@
+import java.util.Scanner;
+
+
 class main{
     private boolean gameStatus = false;
     public static void main(String[] args){
-      board.builder();
+    home hm = new home();
     }
 }
+class input{
+  Scanner scan = new Scanner(System.in);
+}
 
-class home {
+class home extends input {
+    home(){
 
+        System.out.println("\033[0;1m" + "TIC-TAC-TOE");
+        System.out.println("1 : Play Game");
+        System.out.println("2 : HighScore");
+		System.out.println("3 : Settings");
+	    
+		System.out.println("Enter your choice::");
+		String ch = scan.nextInt();
+        switch(ch){
+            case 1:
+            break;
+            case 2:
+            break;
+            case 3:
+            break;
 }
 
 class board {
